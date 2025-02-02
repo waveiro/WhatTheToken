@@ -18,11 +18,11 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-using (var scope = app.Services.CreateScope())
-{
-    var dbContext = scope.ServiceProvider.GetRequiredService<WeatherDbContext>();
-    dbContext.Database.Migrate();
-    SeedDatabase.Initialize(dbContext);
-}
+// using (var scope = app.Services.CreateScope())
+// {
+//     var dbContext = scope.ServiceProvider.GetRequiredService<WeatherDbContext>();
+//     dbContext.Database.Migrate();
+//     SeedDatabase.Initialize(dbContext);
+// }
 
 app.Run();
