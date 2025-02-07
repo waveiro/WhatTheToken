@@ -9,6 +9,6 @@ public class HealthController : ControllerBase
     [HttpGet]
     public IActionResult Get()
     {
-        return Ok("Welcome to the root of the API!");
+        return Ok("Welcome to the health of the API!");
     }
 }
